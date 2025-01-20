@@ -1,0 +1,60 @@
+body {
+  background-color: #f8f9fa;
+}
+.container {
+  margin-top: 20px;
+}
+.card {
+  margin: 10px 0;
+}
+#sensorChart {
+  max-height: 400px;
+}
+
+.zoom-controls {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.zoom-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .zoom-controls {
+    bottom: 60px;
+    right: 10px;
+  }
+
+  .zoom-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #343a40;
+  color: #fff;
+}
